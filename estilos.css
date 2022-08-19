@@ -36,17 +36,15 @@ h2{
 /* PERSONALIZACION DE BOTONES */
 button {
     align-self: center;
-    border: 3px solid violet;
-    margin: 50px 50px;
-    padding: 14px 15px;
+    border: 1px solid violet;
+    margin: 10px 10px;
     color:bisque;
     background: lightcoral;
-    width: auto;
     font-size: 1cm;
     text-align: center;
     text-transform: uppercase;
     animation-name: BOTON; /* VINCULACION A keyframe */
-    animation-duration: 15s;
+    animation-duration: 5s;
 }
 /* ANIMACION DE BOTONES */
 button{
@@ -102,7 +100,6 @@ h1{
     from { width: 0 }
     to { width: 100% }
 }
-
 
 footer{
     font-family: 'Courier New', Courier, monospace;
