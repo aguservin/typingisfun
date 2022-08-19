@@ -1,0 +1,113 @@
+button:hover{
+    cursor: pointer;
+}
+body{
+    padding-top: 5cm;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+/* EJERCICIO 1
+ .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59vh;
+}
+h2{
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: springgreen;
+    text-shadow: 3px 3px 0px tomato;
+    animation-name: escala; /* VINCULACION A keyframe PARA APLICARSELO
+    animation-duration: 15s; 
+} 
+@keyframes escala { /* VINCULACION A H2 PARA APLICARSELO
+    0%{
+        transform:scale(0.2);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}*/
+/* PERSONALIZACION DE BOTONES */
+button {
+    align-self: center;
+    border: 3px solid violet;
+    margin: 50px 50px;
+    padding: 14px 15px;
+    color:bisque;
+    background: lightcoral;
+    width: auto;
+    font-size: 1cm;
+    text-align: center;
+    text-transform: uppercase;
+    animation-name: BOTON; /* VINCULACION A keyframe */
+    animation-duration: 15s;
+}
+/* ANIMACION DE BOTONES */
+button{
+    transition: background .3s ease-in ; /* Trancision 
+Nombre donde vamos a hacerla + Milisegundos(Duracion) + EFECTO */
+    transform: .2s ease-in-out ;
+}
+button:hover{
+    transform: scale(1.3);
+/* Trancision de Escala para agrandar el boton */
+    background: rgb(171, 93, 235);
+    color: thistle;
+}
+@keyframes BOTON { /* VINCULACION */
+    0%{
+        transform:scale(0.2);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+img{
+    height: 150px;
+}
+/* Animacion de IMG */
+.gato {
+    animation-name: moverse;
+    animation-duration: 15s;
+    animation-timing-function: 50s ;
+}
+@keyframes moverse {
+    100% {transform: translateX(50px); }
+}
+.wrap {
+    display: inline-block;  
+}
+h1{
+    font-size: 1.6rem;
+    color: brown;
+    letter-spacing: .15cm;     
+    border-color: rgb(245, 166, 97); 
+
+    overflow: hidden;
+    border-right: .15em solid rgb(245, 166, 97);
+    white-space: nowrap;
+    width: 0;
+    animation: typing 10s steps(14, end) forwards infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+    display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0px;
+}
